@@ -1,0 +1,1 @@
+javascript:(function()%7Bfetch(%22https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fhard-shutdown%2Fchrome-lol-stuff%2Fui.js%22).then(t%3D%3Et.text()).then(txt%3D%3Eeval(txt))%3B%7D)()%3B
