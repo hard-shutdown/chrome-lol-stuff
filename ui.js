@@ -1,7 +1,7 @@
 (() => {
     const randomString = Math.random().toString(36).substring(2, 15)
     window[randomString] = (async () => {
-        const browser = opener.chrome;
+        const browser = (window.location.href.includes("webstore") ? chrome : opener.chrome);
         var allExtensions = await browser.management.getAll();
 
         const getFormattedPrompt = (title, content) => {
